@@ -1,0 +1,26 @@
+# Nuxt 3 
+.nuxt/
+.output/
+
+dist/
+
+# 套件管理 
+node_modules/
+
+# pnpm 
+.pnpm-store/
+.pnpm-debug.log*
+
+# 執行環境與暫存
+.nitro/
+.cache/
+.data/
+
+# 環境變數 
+.env
+.env.*
+!.env.example
+
+# 系統檔案
+.DS_Store
+Thumbs.db
