@@ -5,17 +5,20 @@
     <Experience />
     <Skills />
     <Projects />
+    <Certifications />
     <Footer />
   </main>
 </template>
 
 <script setup lang="ts">
+import { portfolioData } from '~/data/portfolio'
+
 useHead({
-  title: 'Digital Zen | Crafting Digital Serenity',
+  title: portfolioData.seo.title,
   meta: [
     {
       name: 'description',
-      content: 'A minimalist portfolio showcasing thoughtful digital experiences.',
+      content: portfolioData.seo.description,
     },
   ],
 })
