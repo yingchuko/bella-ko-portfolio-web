@@ -17,10 +17,9 @@ export type ExperienceEntry = {
 
 export type ProjectEntry = {
   title: string;
+  punchline: string;
   description: string;
   technologies: string[];
-  /** Root-relative path under `public/`, e.g. `/screenshots/oevra.png`. Omit or null to use the placeholder tile. */
-  image?: string | null;
 };
 
 export type SkillCategory = { id: string; label: string; items: string[] };
@@ -211,9 +210,10 @@ export const portfolioData = {
     viewProjectLabel: "查看專案詳情",
     items: [
       {
-        title: "中央銀行電子表單系統全端維護",
+        title: "央行電子表單全端維護",
+        punchline: "精確處理金融邏輯，穩定運行萬無一失。",
         description:
-          "精確處理高複雜度的金融業務邏輯，並透過使用者訪談優化介面流暢度，在極高穩定性要求下確保系統安全運行。",
+          "深耕高複雜度的金融業務邏輯，精準對接銀行體系之法規需求。透過深度使用者訪談識別操作瓶頸，將繁瑣的紙本流程數位化，在確保資料高度安全與完整性的前提下，優化跨部門審核流暢度。",
         technologies: [
           "Vue 2.6",
           "Vuetify",
@@ -223,12 +223,12 @@ export const portfolioData = {
           "金融業務邏輯",
           "系統安全性",
         ],
-        image: null,
       },
       {
         title: "大型金融報表管理系統優化",
+        punchline: "以標準化組件架構，驅動數據視覺化的數位轉型。",
         description:
-          "執行台銀與華銀報表系統 UI 翻新，建立高度可重用的表單模板與組件庫，顯著降低後續開發與維護成本。",
+          "執行台銀與華銀大型系統之 UI / UX 翻新專案。藉由建立封裝高度可重用的表單模板組件，大幅提升開發效率，提供兼具美感與效能的查詢體驗。",
         technologies: [
           "Vue 3",
           "TypeScript",
@@ -238,12 +238,12 @@ export const portfolioData = {
           "組件化架構設計",
           "介面優化",
         ],
-        image: null,
       },
       {
-        title: "銀行雲端櫃檯與人事系統架構設計",
+        title: "兆豐銀行人事系統架構設計",
+        punchline: "主導全棧技術選型，建構高彈性的整合架構。",
         description:
-          "負責兆豐銀行系統架構規劃，分析規格文件並指導團隊完成 C# 與 Vue 3 的高效整合開發，降低技術溝通成本。",
+          "負責系統核心架構規劃，精確拆解規格文件並弭平技術斷層。透過 C# 後端 API 與 Vue 3 前端之高效整合實作，帶領開發團隊建立標準化流程，顯著降低溝通成本並縮短產品交付週期。",
         technologies: [
           "Vue 3.4",
           "Vue Router",
@@ -253,26 +253,26 @@ export const portfolioData = {
           "技術領導",
           "架構規劃",
         ],
-        image: null,
       },
       {
-        title: "金融無障礙網頁規範實作專案",
+        title: "無障礙網頁規範實作專案",
+        punchline: "消弭數位落差，實踐普惠金融的設計準則。",
         description:
-          "中央銀行電子表單系統符合國家無障礙標準，將複雜的金融表單轉化為符合 WCAG 規範的友善操作體驗。",
+          "將國家級無障礙標準與中央銀行電子表單與結合，透過嚴謹的操作路徑測試，確保符合最新 WCAG 規範，將友善體驗內化於每一處互動細節。",
         technologies: ["無障礙規範", "WCAG", "通用設計", "使用者訪談"],
-        image: null,
       },
       {
         title: "Nuxt 3 技術實踐系列",
+        punchline: "技術轉化與經驗輸出，系統化梳理現代框架美學。",
         description:
-          "系統化梳理 Nuxt 3 之 SSR 架構與 Composables 邏輯應用，榮獲 iThome 鐵人賽佳作，展現技術轉化與輸出能力。",
+          "於 iThome 鐵人賽中系統化梳理 Nuxt 3 之 SSR 與 SSG 渲染架構。透過實戰範例探討 Composables 之邏輯封裝，展現將複雜技術脈絡轉化為易讀文件的輸出能力，榮獲佳作肯定。",
         technologies: ["Nuxt 3", "SSR/SSG", "技術寫作", "iThome 佳作"],
-        image: null,
       },
       {
         title: "Creative Planets 品牌官網",
+        punchline: "極致效能與視覺的交會，打造品牌數位形象。",
         description:
-          "使用 Next.js 打造現代化互動元件，針對 SEO 與載入效能進行優化，完美呈現品牌的高質感視覺意象。",
+          "運用 Next.js 架構優化載入效能，搭配 Framer Motion 實現細膩的互動體驗。針對 SEO 與 Web Vitals 進行全方位打磨，在視覺質感與搜尋排名之間取得完美平衡。",
         technologies: [
           "Next.js",
           "React 18",
@@ -281,12 +281,12 @@ export const portfolioData = {
           "SEO 優化",
           "互動式元件",
         ],
-        image: null,
       },
       {
         title: "手作課程全端電商平台",
+        punchline: "從零構建完整電商生態，實現無縫的購物旅程。",
         description:
-          "從零到一實作完整電商邏輯，整合會員系統、地圖 API 與購物車結帳流程，打造流暢的全端購物體驗。",
+          "整合會員系統、動態購物車及金流結帳流程，實作全端電商之邏輯閉環。搭配地圖 API 進行線下實體店面導航，確保在不同裝置下皆能提供直覺、流暢的購物體驗。",
         technologies: [
           "React 18",
           "Redux",
@@ -295,7 +295,6 @@ export const portfolioData = {
           "RESTful API",
           "RWD",
         ],
-        image: null,
       },
     ] satisfies ProjectEntry[],
   },
