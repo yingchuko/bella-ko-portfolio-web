@@ -94,6 +94,64 @@
 }
 
 @layer components {
+  /* —— Layout & vertical rhythm —— */
+  .section {
+    @apply py-24 md:py-32 px-6 md:px-12 lg:px-20;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto w-full;
+  }
+
+  .section-grid {
+    @apply grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16;
+  }
+
+  .section-grid-sidebar {
+    @apply lg:col-span-4 flex flex-col justify-start;
+  }
+
+  .section-grid-content {
+    @apply lg:col-span-8 lg:pl-12;
+  }
+
+  .section-header {
+    @apply mb-16 md:mb-20;
+  }
+
+  .section-divider {
+    @apply mt-16 md:mt-20 pt-12 md:pt-16 ;
+  }
+
+  /* —— Typography (6 levels) —— */
+  .type-hero {
+    @apply font-serif text-hero text-foreground;
+  }
+
+  .type-section {
+    @apply font-serif text-section font-light text-foreground;
+  }
+
+  .type-section em {
+    @apply italic font-normal;
+  }
+
+  .type-subheading {
+    @apply font-serif text-subheading font-medium text-foreground;
+  }
+
+  .type-body-1 {
+    @apply font-sans text-body-1 text-muted-foreground;
+  }
+
+  .type-body-2 {
+    @apply font-sans text-body-2 text-muted-foreground;
+  }
+
+  .type-accent {
+    @apply font-mono text-accent uppercase text-muted-foreground;
+  }
+
   /* Grainy texture overlay */
   .grain-overlay {
     position: fixed;

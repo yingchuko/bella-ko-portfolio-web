@@ -40,6 +40,7 @@ export const portfolioData = {
     nav: [
       { label: "About", href: "#about" },
       { label: "Experience", href: "#experience" },
+      { label: "Skills" , href: "#skills" },
       { label: "Projects", href: "#projects" },
       { label: "Certifications", href: "#certifications" },
       { label: "Contact", href: "#contact" },
@@ -53,8 +54,8 @@ export const portfolioData = {
       { text: "以架構支撐體驗", italic: false },
     ] satisfies TextSegment[],
     tagline: {
-      line1: "深耕 Vue / Nuxt / TypeScript 的現代化 Web 實踐。",
-      line2: "以金融級架構標準，打造流暢且可靠的數位體驗。",
+      line1: "深耕 Vue / Nuxt / TypeScript 的現代化網頁。",
+      line2: "以金融級架構標準，打造可靠的數位體驗。",
     },
     scrollLabel: "Scroll",
     established: "Est. 2022",
@@ -80,7 +81,7 @@ export const portfolioData = {
 
   experience: {
     sectionLabel: "Experience",
-    titleBefore: "實踐與成長",
+    title: "實踐與成長",
     titleItalic: "A journey through meaningful work.",
     items: [
       {
@@ -130,9 +131,9 @@ export const portfolioData = {
   },
 
   skills: {
-    sectionLabel: "Expertise",
-    titleLine1: "技術核心",
-    titleLine2: "Tools of the craft.",
+    sectionLabel: "Skills",
+    title: "技術核心",
+    titleItalic: "Tools of the craft.",
     categories: [
       {
         id: "development",
@@ -205,8 +206,8 @@ export const portfolioData = {
 
   projects: {
     sectionLabel: "Projects",
-    titleLine1: "賦予邏輯與價值",
-    titleLine2: "Projects that speak for themselves.",
+    title: "賦予邏輯與價值",
+    titleItalic: "Projects that speak for themselves.",
     viewProjectLabel: "查看專案詳情",
     items: [
       {
@@ -301,7 +302,7 @@ export const portfolioData = {
 
   certifications: {
     sectionLabel: "Certifications",
-    titleBefore: "積累的證明",
+    title: "積累的證明",
     titleItalic: "Always learning, always building.",
     items: [
       {
@@ -330,15 +331,10 @@ export const portfolioData = {
   footer: {
     sectionLabel: "Get in Touch",
     email: {
-      mailto: "z072614@gmail.com",
-      displayLine1: "z072614@gmail",
-      displayLine2: ".com",
+      mail: "z072614@gmail.com",
     },
     intro:
       "Open for select projects and collaborations. Let's create something serene together.",
-    localTimeLabel: "Local Time",
-    connectLabel: "Connect",
-    navigateLabel: "Navigate",
     socialLinks: [
       {
         name: "LinkedIn",
@@ -346,12 +342,6 @@ export const portfolioData = {
       },
       { name: "GitHub", url: "https://github.com/yingchuko" },
     ] satisfies SocialLink[],
-    nav: [
-      { label: "About", href: "#about" },
-      { label: "Experience", href: "#experience" },
-      { label: "Projects", href: "#projects" },
-      { label: "Certifications", href: "#certifications" },
-    ] satisfies NavLink[],
     copyrightName: "YingChu Ko",
     tagline: "Crafted with intention",
   },

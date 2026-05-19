@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     families: {
       'Cormorant Garamond': [300, 400, 500, 600, 700],
       'Inter': [300, 400, 500, 600, 700],
+      'IBM Plex Mono': [400, 500],
     },
     display: 'swap',
   },
