@@ -4,7 +4,7 @@
       <div class="section-grid">
         <div class="section-grid-sidebar">
           <span class="type-accent mb-8 block">{{ portfolioData.about.sectionLabel }}</span>
-          <div class="hidden lg:block h-px w-12 bg-border" />
+          <div class="hidden lg:block h-px w-10 bg-muted" />
         </div>
 
         <div class="section-grid-content">

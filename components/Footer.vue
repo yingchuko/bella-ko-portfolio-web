@@ -1,7 +1,7 @@
 <template>
   <footer id="contact" class="section !py-32 md:!py-40 bg-foreground text-background">
     <div class="section-container">
-      <div class="mb-24 md:mb-32">
+      <div class="mb-24 md:mb-24">
         <span class="type-accent text-background/60">{{ portfolioData.footer.sectionLabel }}</span>
 
         <div class="mt-8 md:mt-12 flex flex-col md:flex-row md:items-start justify-between gap-8">

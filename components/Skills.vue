@@ -11,7 +11,7 @@
         </div>
 
         <div class="lg:col-span-8 lg:pl-12">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16">
             <div v-for="category in portfolioData.skills.categories" :key="category.id" class="space-y-8">
               <h3 class="type-accent border-b border-border pb-4 tracking-[0.2em]">
                 {{ category.label }}
@@ -21,7 +21,7 @@
                 <div v-for="(skill, index) in category.items" :key="skill"
                   class="skill-wrapper group flex items-center">
                   <span
-                    class="type-body-1 font-serif font-light transition-transform duration-300 md:group-hover:translate-x-3 text-foreground/90 md:text-foreground whitespace-nowrap">
+                    class="type-subheading md:text-xl font-light transition-transform duration-300 md:group-hover:translate-x-3 text-foreground/90 md:text-foreground whitespace-nowrap">
                     {{ skill }}
                   </span>
 

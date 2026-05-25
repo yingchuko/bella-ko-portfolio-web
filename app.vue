@@ -1,9 +1,5 @@
 <template>
-  <div class="relative">
-    <!-- Grainy texture overlay -->
-    <div class="grain-overlay" />
-
-    <!-- Main content -->
+  <div class="relative isolate min-h-full">
     <NuxtPage />
   </div>
 </template>
@@ -11,7 +7,7 @@
 <script setup lang="ts">
 useHead({
   htmlAttrs: {
-    class: 'bg-background',
+    class: 'min-h-full bg-transparent',
   },
 })
 </script>

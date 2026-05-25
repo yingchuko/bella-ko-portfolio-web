@@ -34,7 +34,7 @@
           <div
             class="grid transition-all duration-700 mt-6 max-lg:grid-rows-[1fr] max-lg:opacity-100 lg:grid-rows-[0fr] lg:opacity-0 lg:group-hover:grid-rows-[1fr] lg:group-hover:opacity-100 lg:group-hover:mt-4">
             <div class="overflow-hidden">
-              <p class="type-body-2 mb-6 text-justify">{{ project.description }}</p>
+              <p class="type-body-1 mb-6 text-justify">{{ project.description }}</p>
               <div class="flex flex-wrap items-center gap-y-3 type-accent normal-case tracking-[0.15em]">
                 <template v-for="(tech, tIndex) in project.technologies" :key="tech">
                   <span>{{ tech }}</span>

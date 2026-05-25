@@ -3,16 +3,6 @@
     <div class="canvas-placeholder absolute inset-0 -z-10" />
 
     <div class="section-container">
-      <nav
-        class="absolute top-8 left-6 md:left-12 lg:left-20 right-6 md:right-12 lg:right-20 flex justify-between items-center opacity-0 animate-fade-in">
-        <span class="type-subheading font-light tracking-wide">{{ portfolioData.site.brand }}</span>
-        <div class="hidden lg:flex items-center gap-8">
-          <a v-for="link in portfolioData.site.nav" :key="link.href" :href="link.href"
-            class="type-body-2 tracking-wider link-underline hover:text-foreground transition-colors duration-300">
-            {{ link.label }}
-          </a>
-        </div>
-      </nav>
 
       <div class="space-y-8">
         <h1 class="type-hero opacity-0 animate-fade-in-up delay-200">
