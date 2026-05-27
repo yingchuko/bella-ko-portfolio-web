@@ -6,9 +6,7 @@
           <span class="type-accent">{{ portfolioData.certifications.sectionLabel }}</span>
           <h2 class="type-section mt-6">
             {{ portfolioData.certifications.title }}<br />
-            <span class="italic">
-              {{ portfolioData.certifications.titleItalic }}
-            </span>
+            <span class="italic">{{ portfolioData.certifications.titleItalic }}</span>
           </h2>
         </div>
 
@@ -20,13 +18,13 @@
                 <h3 class="type-subheading font-light group-hover:translate-x-1 transition-transform duration-500">
                   {{ cert.name }}
                 </h3>
-                <p class="type-body-2 normal-case tracking-widest">
+                <p class="type-body-2 normal-case">
                   {{ cert.issuer }}
                 </p>
               </div>
 
               <div class="col-span-2 md:col-span-3 text-right">
-                <span class="type-body-2 tracking-wider">
+                <span class="type-body-2">
                   {{ cert.year }}
                 </span>
               </div>
@@ -39,5 +37,5 @@
 </template>
 
 <script setup lang="ts">
-import { portfolioData } from '~/data/portfolio'
+const portfolioData = usePortfolioData()
 </script>

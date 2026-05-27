@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
+  devtools: { enabled: import.meta.dev },
   ssr: true,
 
   modules: [
@@ -12,10 +12,12 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'Cormorant Garamond': [300, 400, 500, 600, 700],
-      'Inter': [300, 400, 500, 600, 700],
+      Inter: [300, 400, 500, 600, 700],
       'IBM Plex Mono': [400, 500],
     },
     display: 'swap',
+    preload: true,
+    prefetch: false,
   },
 
   app: {
@@ -29,14 +31,37 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+      ],
     },
   },
 
   css: ['~/assets/css/main.css'],
 
+  routeRules: {
+    '/': { prerender: true },
+    '/**': { prerender: true },
+  },
+
   nitro: {
     prerender: {
+      crawlLinks: true,
       routes: ['/'],
+    },
+  },
+
+  vite: {
+    build: {
+      cssCodeSplit: true,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules/gsap')) return 'gsap'
+          },
+        },
+      },
     },
   },
 

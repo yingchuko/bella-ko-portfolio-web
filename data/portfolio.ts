@@ -17,7 +17,6 @@ export type ExperienceEntry = {
 
 export type ProjectEntry = {
   title: string;
-  punchline: string;
   description: string;
   technologies: string[];
 };
@@ -58,7 +57,7 @@ export const portfolioData = {
       line2: "以金融級架構標準，打造可靠的數位體驗。",
     },
     scrollLabel: "Scroll",
-    established: "Est. 2022",
+    established: "Est. 2026",
   },
 
   about: {
@@ -139,7 +138,7 @@ export const portfolioData = {
         id: "development",
         label: "Frontend & Development",
         items: [
-          "JavaScript (ES6+)",
+          "JavaScript",
           "TypeScript",
           "Vue 3",
           "Nuxt 3",
@@ -183,22 +182,22 @@ export const portfolioData = {
         {
           title: "架構與效能",
           description:
-            "專精於模組化重構與組件庫開發，有效提升代碼重用性與維護效率。",
+            "專注於模組化重構與組件庫開發，提升程式碼重用性與後續維護效率。",
         },
         {
           title: "設計轉化",
           description:
-            "憑藉美學背景，精準弭平設計與技術落差，將複雜邏輯轉化為直觀介面。",
+            "具設計背景，協助縮短設計與開發間的落差，將複雜功能整理成易於操作的介面，並重視細節一致性。",
         },
         {
           title: "資安與規範",
           description:
-            "落實 SSDLC 安全流程與無障礙標準，確保金融級系統的穩健與包容性。",
+            "取得資訊安全相關證照，實際參與 SSDLC 安全流程與無障礙規範落實，提升系統穩定性與可用性。",
         },
         {
           title: "技術影響力",
           description:
-            "具備技術教學經驗，主導 Git Flow 協作與 Code Review，帶動團隊成長。",
+            "擁有 Vue 技術分享與 Nuxt 鐵人賽佳作經驗，利用 Git Flow 與 Code Review 協助團隊建立開發共識。",
         },
       ] satisfies PhilosophyPillar[],
     },
@@ -208,93 +207,67 @@ export const portfolioData = {
     sectionLabel: "Projects",
     title: "賦予邏輯與價值",
     titleItalic: "Projects that speak for themselves.",
-    viewProjectLabel: "查看專案詳情",
     items: [
       {
         title: "央行電子表單全端維護",
-        punchline: "精確處理金融邏輯，穩定運行萬無一失。",
         description:
           "深耕高複雜度的金融業務邏輯，精準對接銀行體系之法規需求。透過深度使用者訪談識別操作瓶頸，將繁瑣的紙本流程數位化，在確保資料高度安全與完整性的前提下，優化跨部門審核流暢度。",
         technologies: [
           "Vue 2.6",
           "Vuetify",
-          "Vue Router",
           "C#",
-          "SCSS",
-          "金融業務邏輯",
-          "系統安全性",
         ],
       },
       {
         title: "大型金融報表管理系統優化",
-        punchline: "以標準化組件架構，驅動數據視覺化的數位轉型。",
         description:
           "執行台銀與華銀大型系統之 UI / UX 翻新專案。藉由建立封裝高度可重用的表單模板組件，大幅提升開發效率，提供兼具美感與效能的查詢體驗。",
         technologies: [
           "Vue 3",
           "TypeScript",
-          "Pinia",
           "Quasar",
-          "Tailwind",
-          "組件化架構設計",
-          "介面優化",
         ],
       },
       {
         title: "兆豐銀行人事系統架構設計",
-        punchline: "主導全棧技術選型，建構高彈性的整合架構。",
         description:
           "負責系統核心架構規劃，精確拆解規格文件並弭平技術斷層。透過 C# 後端 API 與 Vue 3 前端之高效整合實作，帶領開發團隊建立標準化流程，顯著降低溝通成本並縮短產品交付週期。",
         technologies: [
           "Vue 3.4",
-          "Vue Router",
-          "Vuetify",
-          "C#",
-          "Sass",
           "技術領導",
           "架構規劃",
         ],
       },
       {
         title: "無障礙網頁規範實作專案",
-        punchline: "消弭數位落差，實踐普惠金融的設計準則。",
         description:
           "將國家級無障礙標準與中央銀行電子表單與結合，透過嚴謹的操作路徑測試，確保符合最新 WCAG 規範，將友善體驗內化於每一處互動細節。",
         technologies: ["無障礙規範", "WCAG", "通用設計", "使用者訪談"],
       },
       {
         title: "Nuxt 3 技術實踐系列",
-        punchline: "技術轉化與經驗輸出，系統化梳理現代框架美學。",
         description:
           "於 iThome 鐵人賽中系統化梳理 Nuxt 3 之 SSR 與 SSG 渲染架構。透過實戰範例探討 Composables 之邏輯封裝，展現將複雜技術脈絡轉化為易讀文件的輸出能力，榮獲佳作肯定。",
         technologies: ["Nuxt 3", "SSR/SSG", "技術寫作", "iThome 佳作"],
       },
       {
         title: "Creative Planets 品牌官網",
-        punchline: "極致效能與視覺的交會，打造品牌數位形象。",
         description:
           "運用 Next.js 架構優化載入效能，搭配 Framer Motion 實現細膩的互動體驗。針對 SEO 與 Web Vitals 進行全方位打磨，在視覺質感與搜尋排名之間取得完美平衡。",
         technologies: [
           "Next.js",
           "React 18",
-          "Tailwind CSS",
           "TypeScript",
-          "SEO 優化",
-          "互動式元件",
         ],
       },
       {
         title: "手作課程全端電商平台",
-        punchline: "從零構建完整電商生態，實現無縫的購物旅程。",
         description:
           "整合會員系統、動態購物車及金流結帳流程，實作全端電商之邏輯閉環。搭配地圖 API 進行線下實體店面導航，確保在不同裝置下皆能提供直覺、流暢的購物體驗。",
         technologies: [
           "React 18",
-          "Redux",
-          "Node.js",
           "MySQL",
           "RESTful API",
-          "RWD",
         ],
       },
     ] satisfies ProjectEntry[],

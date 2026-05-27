@@ -12,14 +12,14 @@
 </template>
 
 <script setup lang="ts">
-import { portfolioData } from '~/data/portfolio'
+const portfolioData = usePortfolioData()
 
 useHead({
-  title: portfolioData.seo.title,
+  title: () => portfolioData.value.seo.title,
   meta: [
     {
       name: 'description',
-      content: portfolioData.seo.description,
+      content: () => portfolioData.value.seo.description,
     },
   ],
 })
