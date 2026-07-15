@@ -23,9 +23,9 @@ export default {
         border: '#E5E5E3',
       },
       fontFamily: {
-        serif: ['"Cormorant Garamond"', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
+        serif: ['"Cormorant Garamond"', '"Noto Serif TC"', 'serif'],
+        sans: ['Inter', '"Noto Sans TC"', 'system-ui', 'sans-serif'],
+        mono: ['"IBM Plex Mono"', '"Noto Sans TC"', 'ui-monospace', 'monospace'],
       },
       fontSize: {
         hero: [

@@ -1,3 +1,7 @@
+/* CJK fallback fonts (unicode-range chunked from Google's CDN, so only used glyphs load).
+   Noto Serif TC pairs with Cormorant Garamond; Noto Sans TC pairs with Inter. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

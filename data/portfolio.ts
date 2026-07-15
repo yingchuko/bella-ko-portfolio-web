@@ -89,10 +89,10 @@ export const portfolioData = {
         url: "https://www.iisigroup.com/",
         role: "前端工程師",
         description: [
-          "重構央行、台銀等金融核心系統，從零建立 Nuxt 3 企業級架構。",
-          "標準化前端組件與開發規範，透過 Git Flow、Code Review 提升協作效率。",
-          "取得 ISO 27001 證照並擔任資安代表通過稽核，確保系統穩健性。",
-          "負責無障礙網頁檢測 WCAG 優化，使系統符合通用設計標準。",
+          "重構央行、台銀與兆豐等大型系統，導入 TypeScript 與組件化設計，建構高維護性的企業級架構。",
+          "全端協作 RESTful API 串接與 C#/.NET 維護，具備處理複雜前後端邏輯整合的能力。",
+          "取得 ISO 27001 主導稽核員證照並擔任資安代表，同時負責無障礙網頁檢測與通用設計優化。",
+          "建立前端組件標準化規範，透過 Git Flow、Code Review 與技術指導提升團隊協作效率。",
         ],
         skills: [
           "Vue 3",
@@ -103,6 +103,18 @@ export const portfolioData = {
           "ISO 27001",
           "Accessibility",
         ],
+      },
+       {
+        year: "2023 — 2023",
+        company: "iThome 鐵人賽佳作",
+        url: "https://ithelp.ithome.com.tw/2020-12th-ironman/articles/6664",
+        role: "Modern Web 組佳作",
+        description: [
+          "30 篇 Nuxt 3 技術文章，系統化整理框架核心概念與實務應用。",
+          "內容涵蓋 SSR、Nitro Server、Server API、Data Fetching、Composables、Routing、Layouts、Middleware、State Management 等核心技術。",
+          "延伸研究 Nuxt Image、Nuxt Content、UnoCSS、ESLint 與 Deployment。",
+        ],
+        skills: ["Vue 3", "Nuxt 3", "技術寫作",],
       },
       {
         year: "2022 — 2022",
@@ -209,7 +221,7 @@ export const portfolioData = {
     titleItalic: "Projects that speak for themselves.",
     items: [
       {
-        title: "央行電子表單全端維護",
+        title: "央行＿電子表單全端維護",
         description:
           "深耕高複雜度的金融業務邏輯，精準對接銀行體系之法規需求。透過深度使用者訪談識別操作瓶頸，將繁瑣的紙本流程數位化，在確保資料高度安全與完整性的前提下，優化跨部門審核流暢度。",
         technologies: [
@@ -219,9 +231,9 @@ export const portfolioData = {
         ],
       },
       {
-        title: "大型金融報表管理系統優化",
+        title: "台銀／華銀＿報表管理系統",
         description:
-          "執行台銀與華銀大型系統之 UI / UX 翻新專案。藉由建立封裝高度可重用的表單模板組件，大幅提升開發效率，提供兼具美感與效能的查詢體驗。",
+          "執行台灣銀行與華南銀行大型系統之前端翻新專案。藉由 TypeScript 與 UI Framework 建立高度可重用的表單模板組件，大幅提升開發效率，提供兼具美感與效能的查詢體驗。",
         technologies: [
           "Vue 3",
           "TypeScript",
@@ -229,9 +241,9 @@ export const portfolioData = {
         ],
       },
       {
-        title: "兆豐銀行人事系統架構設計",
+        title: "兆豐銀行＿人事系統架構設計",
         description:
-          "負責系統核心架構規劃，精確拆解規格文件並弭平技術斷層。透過 C# 後端 API 與 Vue 3 前端之高效整合實作，帶領開發團隊建立標準化流程，顯著降低溝通成本並縮短產品交付週期。",
+          "負責系統核心架構規劃，精確拆解規格文件並弭平技術斷層。透過 C# 後端 API 與 Vue 3 前端的整合實作，帶領開發團隊建立標準化流程，顯著降低溝通成本並縮短產品交付週期。",
         technologies: [
           "Vue 3.4",
           "技術領導",
@@ -239,35 +251,25 @@ export const portfolioData = {
         ],
       },
       {
-        title: "無障礙網頁規範實作專案",
+        title: "央行＿無障礙網頁規範實作",
         description:
-          "將國家級無障礙標準與中央銀行電子表單與結合，透過嚴謹的操作路徑測試，確保符合最新 WCAG 規範，將友善體驗內化於每一處互動細節。",
+          "將國家級無障礙標準與中央銀行電子表單與結合，透過嚴謹的操作路徑測試與使用者訪談，確保符合最新 WCAG 規範，將友善體驗內化於每一處互動細節。",
         technologies: ["無障礙規範", "WCAG", "通用設計", "使用者訪談"],
       },
       {
-        title: "Nuxt 3 技術實踐系列",
+        title: "Discord＿技術新聞推播工具",
         description:
-          "於 iThome 鐵人賽中系統化梳理 Nuxt 3 之 SSR 與 SSG 渲染架構。透過實戰範例探討 Composables 之邏輯封裝，展現將複雜技術脈絡轉化為易讀文件的輸出能力，榮獲佳作肯定。",
-        technologies: ["Nuxt 3", "SSR/SSG", "技術寫作", "iThome 佳作"],
+          "協同 AI 工具完成技術新聞策展平台。面對限制主導三層架構重構與效能排毒，導入全域排他鎖與惰性限額評估，大幅節省 95% 執行時間與 AI Token 成本，根除記憶體溢出與逾時危機。",
+        technologies: ["Next.js", "Claude", "Discord Webhook"],
       },
       {
-        title: "Creative Planets 品牌官網",
+        title: "Creative Planets＿品牌官網",
         description:
           "運用 Next.js 架構優化載入效能，搭配 Framer Motion 實現細膩的互動體驗。針對 SEO 與 Web Vitals 進行全方位打磨，在視覺質感與搜尋排名之間取得完美平衡。",
         technologies: [
           "Next.js",
           "React 18",
           "TypeScript",
-        ],
-      },
-      {
-        title: "手作課程全端電商平台",
-        description:
-          "整合會員系統、動態購物車及金流結帳流程，實作全端電商之邏輯閉環。搭配地圖 API 進行線下實體店面導航，確保在不同裝置下皆能提供直覺、流暢的購物體驗。",
-        technologies: [
-          "React 18",
-          "MySQL",
-          "RESTful API",
         ],
       },
     ] satisfies ProjectEntry[],
@@ -292,11 +294,6 @@ export const portfolioData = {
         name: "安全程式碼撰寫",
         issuer: "中華電信學院",
         year: "2023",
-      },
-      {
-        name: "前端開發全端整合就業養成班",
-        issuer: "iSpan 資展國際 & TCCA 台中市電腦商業共同協會",
-        year: "2022",
       },
     ],
   },
