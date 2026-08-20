@@ -19,10 +19,11 @@
               <div class="hidden lg:flex items-center gap-4 type-accent opacity-40 project-explore">
                 <span>Explore</span>
               </div>
-              <h3
-                class="type-subheading transition-transform duration-500 origin-left lg:group-hover:[transform:skewX(-8deg)_translateX(6px)]">
-                {{ project.title }}
-              </h3>
+              <component :is="project.url ? 'a' : 'h3'" :href="project.url" :target="project.url ? '_blank' : undefined"
+                :rel="project.url ? 'noopener noreferrer' : undefined"
+                class="type-subheading inline-block transition-transform duration-500 origin-left lg:group-hover:[transform:skewX(-8deg)_translateX(6px)]">
+                {{ project.title }} <span v-if="project.url">↗</span>
+              </component>
               <div class="flex flex-wrap items-center gap-y-3 type-accent opacity-60">
                 <template v-for="(tech, tIndex) in project.technologies" :key="tech">
                   <span>{{ tech }}</span>

@@ -19,6 +19,7 @@ export type ProjectEntry = {
   title: string;
   description: string;
   technologies: string[];
+  url?: string;
 };
 
 export type SkillCategory = { id: string; label: string; items: string[] };
@@ -39,7 +40,7 @@ export const portfolioData = {
     nav: [
       { label: "About", href: "#about" },
       { label: "Experience", href: "#experience" },
-      { label: "Skills" , href: "#skills" },
+      { label: "Skills", href: "#skills" },
       { label: "Projects", href: "#projects" },
       { label: "Certifications", href: "#certifications" },
       { label: "Contact", href: "#contact" },
@@ -104,7 +105,7 @@ export const portfolioData = {
           "Accessibility",
         ],
       },
-       {
+      {
         year: "2023 — 2023",
         company: "iThome 鐵人賽佳作",
         url: "https://ithelp.ithome.com.tw/2020-12th-ironman/articles/6664",
@@ -114,7 +115,7 @@ export const portfolioData = {
           "內容涵蓋 SSR、Nitro Server、Server API、Data Fetching、Composables、Routing、Layouts、Middleware、State Management 等核心技術。",
           "延伸研究 Nuxt Image、Nuxt Content、UnoCSS、ESLint 與 Deployment。",
         ],
-        skills: ["Vue 3", "Nuxt 3", "技術寫作",],
+        skills: ["Vue 3", "Nuxt 3", "技術寫作"],
       },
       {
         year: "2022 — 2022",
@@ -224,32 +225,29 @@ export const portfolioData = {
         title: "央行＿電子表單全端維護",
         description:
           "深耕高複雜度的金融業務邏輯，精準對接銀行體系之法規需求。透過深度使用者訪談識別操作瓶頸，將繁瑣的紙本流程數位化，在確保資料高度安全與完整性的前提下，優化跨部門審核流暢度。",
-        technologies: [
-          "Vue 2.6",
-          "Vuetify",
-          "C#",
-        ],
+        technologies: ["Vue 2.6", "Vuetify", "C#"],
       },
       {
         title: "台銀／華銀＿報表管理系統",
         description:
           "執行台灣銀行與華南銀行大型系統之前端翻新專案。藉由 TypeScript 與 UI Framework 建立高度可重用的表單模板組件，大幅提升開發效率，提供兼具美感與效能的查詢體驗。",
-        technologies: [
-          "Vue 3",
-          "TypeScript",
-          "Quasar",
-        ],
+        technologies: ["Vue 3", "TypeScript", "Quasar"],
       },
       {
-        title: "兆豐銀行＿人事系統架構設計",
+        title: "Discord＿技術新聞推播工具",
         description:
-          "負責系統核心架構規劃，精確拆解規格文件並弭平技術斷層。透過 C# 後端 API 與 Vue 3 前端的整合實作，帶領開發團隊建立標準化流程，顯著降低溝通成本並縮短產品交付週期。",
-        technologies: [
-          "Vue 3.4",
-          "技術領導",
-          "架構規劃",
-        ],
+          "協同 AI 工具完成技術新聞策展平台。面對限制主導三層架構重構與效能排毒，導入全域排他鎖與惰性限額評估，大幅節省 95% 執行時間與 AI Token 成本，根除記憶體溢出與逾時危機。",
+        technologies: ["Next.js", "Claude", "Discord Webhook"],
+        url: "https://github.com/yingchuko/tech-curator.git",
       },
+      {
+        title: "PetTopic＿寵物飲食電商平台",
+        description:
+          "打造流暢的寵物電商與健康測驗體驗。採用 Zustand 實現輕量高效的全域狀態管理與購物車資料存取，搭配 Framer Motion 與 Tailwind CSS 構建符合原子化設計的高重用性組件與細膩互動。",
+        technologies: ["React 19", "Zustand", "TypeScript", "Tailwind"],
+        url: "https://pet-topic.vercel.app/",
+      },
+
       {
         title: "央行＿無障礙網頁規範實作",
         description:
@@ -257,20 +255,16 @@ export const portfolioData = {
         technologies: ["無障礙規範", "WCAG", "通用設計", "使用者訪談"],
       },
       {
-        title: "Discord＿技術新聞推播工具",
+        title: "兆豐銀行＿人事系統架構設計",
         description:
-          "協同 AI 工具完成技術新聞策展平台。面對限制主導三層架構重構與效能排毒，導入全域排他鎖與惰性限額評估，大幅節省 95% 執行時間與 AI Token 成本，根除記憶體溢出與逾時危機。",
-        technologies: ["Next.js", "Claude", "Discord Webhook"],
+          "負責系統核心架構規劃，精確拆解規格文件並弭平技術斷層。透過 C# 後端 API 與 Vue 3 前端的整合實作，帶領開發團隊建立標準化流程，顯著降低溝通成本並縮短產品交付週期。",
+        technologies: ["Vue 3.4", "技術領導", "架構規劃"],
       },
       {
         title: "Creative Planets＿品牌官網",
         description:
           "運用 Next.js 架構優化載入效能，搭配 Framer Motion 實現細膩的互動體驗。針對 SEO 與 Web Vitals 進行全方位打磨，在視覺質感與搜尋排名之間取得完美平衡。",
-        technologies: [
-          "Next.js",
-          "React 18",
-          "TypeScript",
-        ],
+        technologies: ["Next.js", "React 18", "TypeScript"],
       },
     ] satisfies ProjectEntry[],
   },
